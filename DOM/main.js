@@ -318,11 +318,11 @@ heading.style.backgroundColor = '#fff'
 
 
 // Task 2 
-// const li = document.querySelectorAll('ol li')[1]
-// theli.id = 'Ruby'
-// theli.className = 'Rails'
-// theli.style.color = 'blue'
-// console.log(theli.innerHTML)
+const theli = document.querySelectorAll('ol li')[1]
+theli.id = 'Ruby'
+theli.className = 'Rails'
+theli.style.color = 'blue'
+console.log(theli.innerHTML)
 
 // Edit task3 to right code
 const type = document.querySelectorAll('form input')[1]
@@ -334,7 +334,7 @@ console.log(type)
 // task
 const par = document.getElementsByClassName('dom')[2]
 const parText = par.innerHTML.split('e')
-para.innerHTML = paraText.join('')
+par.innerHTML = parText.join('')
 // par.setAttribute('style', 'color: green;')
 // par.style = 'color: green;'
 par.innerHTML.split('e')
