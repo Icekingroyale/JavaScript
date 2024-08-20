@@ -43,6 +43,7 @@ b = 55
 
 // const
 const c = 20;
+console.log(c)
 // const c = 30;
 // c = 50
 

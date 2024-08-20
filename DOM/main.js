@@ -34,8 +34,8 @@ console.log(document.body.lastElementChild); //returns the last element
 console.log(document.body.children[2].lastElementChild); // to print P in the console
 
 // searching the DOM
-// .getElementByTagName()
-// .getElementByClassname()
+// .getElementsByTagName()
+// .getElemenstByClassname()
 // .getElementById()
 // .querySelector()
 // .querySelectorAll()
@@ -296,3 +296,51 @@ countries.forEach((country) => {
 
 const putselect = document.getElementsByClassName("putselect")[0];
 document.getElementById("form").insertBefore(select, putselect);
+
+
+
+// Accessing attribute from element in DOM     20-08-2024
+const heading = document.querySelector('h2')
+const elemId = heading.getAttribute('id')
+const elemClass = heading.getAttribute('class')
+
+heading.setAttribute('id', 'heading2')
+heading.setAttribute('title', 'A heading element')
+heading.setAttribute('style', 'color: red; border: 2px solid black;')
+
+
+// setting attribute using the  assignment operator
+
+heading.id = 'heading5'
+heading.style = 'color: red; background-color: gray; border: 2px solid green;'
+heading.style.color = 'black'
+heading.style.backgroundColor = '#fff'
+
+
+// Task 2 
+// const li = document.querySelectorAll('ol li')[1]
+// theli.id = 'Ruby'
+// theli.className = 'Rails'
+// theli.style.color = 'blue'
+// console.log(theli.innerHTML)
+
+// Edit task3 to right code
+const type = document.querySelectorAll('form input')[1]
+type.setAttribute('type','text')
+console.log(type)
+// Edit task3 to right code
+
+
+// task
+const par = document.getElementsByClassName('dom')[2]
+const parText = par.innerHTML.split('e')
+para.innerHTML = paraText.join('')
+// par.setAttribute('style', 'color: green;')
+// par.style = 'color: green;'
+par.innerHTML.split('e')
+
+console.log(par)
+
+
+// console.log(elemId)
+// console.log(elemClass)
