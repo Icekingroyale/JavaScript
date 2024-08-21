@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box1{
+        .box{
             width: 200px;
             height: 200px;
             border: 2px solid black;
@@ -20,6 +20,10 @@
 
 </head>
 <body>
+
+    <h1 id="demo" onmouseover="changeH1()" onmouseleave="changeH1Back()"> Hello World </h1>
+   
+    <h2 id="h2" onmouseover="changewagwan()"> Wagwan </h2> 
     <a href="./index.html">
         <p>Home</p>
     </a><a href="">
@@ -28,11 +32,20 @@
 
     <main>
         <section>
-            <div class="box1"></div>
-            <button onclick="changecolor()">Click me</button>
-
-
+            <div class="box box1"></div>
+            <button onclick="randcolor()">Click me</button>
         </section>
+        <section>
+            <div class="box box2"></div>
+            <button> click me</button>
+        </section>
+        <form action="" id="form">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username"> <br>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password"> <br>
+            <input type="submit" value="submit">
+        </form>
     </main>
     <script src="event.js"></script>
 </body>
