@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .box{
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
-        }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+      }
 
-        button{
-            color: white;
-            background-color: green;
-            border-radius: 8px;
-        }
+      .error {
+        display: none;
+        color: red;
+        font-style: italic;
+      }
+
+      .login{
+        color: rgb(17, 216, 17);
+        font-size: 2rem;
+        font-style: italic;
+        display: none;
+      }
+      button {
+        color: white;
+        background-color: green;
+        border-radius: 8px;
+      }
     </style>
+  </head>
+  <body>
+    <h1 id="demo" onmouseover="changeH1()" onmouseleave="changeH1Back()">
+      Hello World
+    </h1>
 
-</head>
-<body>
-
-    <h1 id="demo" onmouseover="changeH1()" onmouseleave="changeH1Back()"> Hello World </h1>
-   
-    <h2 id="h2" onmouseover="changewagwan()"> Wagwan </h2> 
+    <h2 id="h2" onmouseover="changewagwan()">Wagwan</h2>
     <a href="./index.html">
-        <p>Home</p>
-    </a><a href="">
-        <p>Page2</p>
+      <p>Home</p> </a
+    ><a href="">
+      <p>Page2</p>
     </a>
 
     <main>
-        <section>
-            <div class="box box1"></div>
-            <button onclick="randcolor()">Click me</button>
-        </section>
-        <section>
-            <div class="box box2"></div>
-            <button> click me</button>
-        </section>
-        <form action="" id="form">
-            <label for="username">username</label>
-            <input type="text" name="username" id="username"> <br>
-            <label for="password">password</label>
-            <input type="password" name="password" id="password"> <br>
-            <input type="submit" value="submit">
-        </form>
+      <section>
+        <div class="box box1"></div>
+        <button onclick="randcolor()">Click me</button>
+      </section>
+      <section>
+        <div class="box box2"></div>
+        <button>click me</button>
+      </section>
+      <h2 class="login">login successfull</h2>
+      <form action="" id="form">
+        <h2>Fill in your details</h2>
+        <p class="error">error</p>
+        <div>
+          <label for="username">username</label> <br>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div>
+
+            <label for="password">password</label> <br>
+            <input type="password" name="password" id="password" /> 
+            <span>ii</span>
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+
+      <section>
+          <p class="dispaly"> </p>
+        <input type="text" id="text">
+      </section>
+    
     </main>
     <script src="event.js"></script>
-</body>
+  </body>
 </html>
